@@ -1,0 +1,161 @@
+/* Styles */
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+
+@font-face {
+    font-family: 'Hollywood Hills';
+    src: url('../fonts/SFHollywoodHills.eot');
+    src: url('../fonts/SFHollywoodHills.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFHollywoodHills.woff2') format('woff2'),
+        url('../fonts/SFHollywoodHills.woff') format('woff'),
+        url('../fonts/SFHollywoodHills.ttf') format('truetype'),
+        url('../fonts/SFHollywoodHills.svg#SFHollywoodHills') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+html {
+  align-items: center;
+  overflow-x: hidden;
+}
+
+a { font-family: 'Roboto', sans-serif; font-weight: bold; }
+
+h1 { font-family: 'Roboto', sans-serif; }
+
+h { font-family: "League Gothic", sans-serif; }
+
+/* Header stuff */
+
+.rock-header {
+  overflow: hidden;
+  background-color: white;
+  background-image: url('../gfx/black_header.png');
+  background-size: auto;
+  background-position: center;
+
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+
+  margin-bottom: 0px;
+
+  display: flex;
+}
+
+.rock-header .menu-home:hover {
+  color: white;
+  cursor: default;
+}
+
+.rock-header .menu-home {
+  font-family: 'Hollywood Hills';
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 50px;
+
+  color: white;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+
+  margin: auto;
+  margin-top: 21px;
+  margin-bottom: -20px;
+  margin-left: 30px;
+}
+
+.rock-header a {
+  color: white;
+
+  font-size: 15px;
+
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+.rock-header a:hover {
+  color: white;
+}
+
+.rock-header a.active {
+  color: white;
+}
+
+.rock-header-right {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.header-logo {
+  height: 70px;
+  width: auto;
+  display: flex;
+}
+
+body {
+  align-items: center;
+  /* display: flex; */
+  flex-direction: column;
+
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+  justify-content: center;
+
+  margin: 0px 0px 0px 0px;
+}
+
+html {
+  background-color: black;
+}
+
+
+.discord-icon {
+  content: url('../gfx/discord-white.png');
+}
+
+.twitter-icon {
+  content: url('../gfx/twitter.svg');
+}
+
+#rock-text-div-1-bottom {
+  display: block;
+  line-height: 23px;
+
+  font-size: 25px; opacity: .4; margin-bottom: 0px; margin-top: 10px; padding-left: 5%; padding-right: 5%;
+}
+
+.rock-large-text {
+  text-align: center; color: white; font-size: 30px; font-family: 'League Gothic'; width: 100vw; background-color: black; padding-top: 30px; padding-bottom: 20px;
+}
+
+.rockafellaz-banner {
+  background-image: url('../gfx/rockafellazBanner.jpeg');
+  margin-top: 30px; margin-bottom: 30px;
+  background-position: auto; background-repeat: no-repeat; background-size: cover;
+  width: 100vw; height: calc(100vw/3);
+}
+
+.rock-large-text {
+  text-align: center; color: white; font-size: 30px; font-family: 'League Gothic'; width: 100vw; background-color: black; padding-top: 30px; padding-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .rock-header .menu-home {
+    font-size: 40px;
+  }
+
+  #rock-text-div-1-top {
+    font-size: 22px;
+    display: block;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .rock-header .menu-home {
+    font-size: 35px;
+  }
+}
